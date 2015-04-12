@@ -1,7 +1,7 @@
 {
   "name": "env-filter",
   "version": "0.0.1",
-  "description": "Filter environment variables and return them as a string. Useful for running java applications and reading the output.",
+  "description": "Filter environment variables and return them as a string. Useful for running Java applications and reading the output.",
   "main": "index.js",
   "repository": {
     "type": "git",
