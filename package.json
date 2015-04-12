@@ -1,0 +1,20 @@
+{
+  "name": "env-filter",
+  "version": "0.0.1",
+  "description": "Filter environment variables and return them as a string. Useful for running java applications and reading the output.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/pedrosland/env-filter"
+  },
+  "keywords": [
+    "environment",
+    "arguments"
+  ],
+  "author": "Pedro Sland",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pedrosland/env-filter/issues"
+  },
+  "homepage": "https://github.com/pedrosland/env-filter"
+}
