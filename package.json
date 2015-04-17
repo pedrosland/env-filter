@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "Filter environment variables and return them as a string. Useful for running Java applications and reading the output.",
   "main": "index.js",
+  "scripts": {
+    "lint": "eslint ."
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/pedrosland/env-filter"
@@ -16,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/pedrosland/env-filter/issues"
   },
-  "homepage": "https://github.com/pedrosland/env-filter"
+  "homepage": "https://github.com/pedrosland/env-filter",
+  "devDependencies": {
+    "eslint": "^0.20.0"
+  }
 }
