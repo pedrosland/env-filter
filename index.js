@@ -1,41 +1,42 @@
 /**
  * Filter variables from the environment.
  *
- * @param  {String[]} keys             Array of environment variables to filter out
- * @param  {Object=}  oldEnv           Environment object. Defaults to `process.env`
+ * @param  {String[]} envVars          Array of environment variables to filter out
+ * @param  {Object=}  env              Environment object. Defaults to `process.env`
  * @return {Object}   result           Environment
  * @return {Object}   result.env       Clean environment
  * @return {String}   result.arguments Arguments string
  */
-function filter(keys, oldEnv) {
-  // New process environment
+function filter(envVars, env) {
+  // New, clean environment
   var cleanEnv = {};
-  // Filtered options
-  var filteredOpts = [];
-  var filteredEnv = {};
+  // Filtered environment variables
+  var extraEnvArr = [];
+  var extraEnv = {};
 
-  oldEnv = oldEnv || process.env;
+  env = env || process.env;
 
   // Copy environment but filter variables
-  Object.keys(oldEnv)
+  Object.keys(env)
     .forEach(function (property) {
-      if (keys.indexOf(property) > -1) {
+      if (envVars.indexOf(property) > -1) {
         // Copy into result object
-        filteredEnv[property] = oldEnv[property];
+        extraEnv[property] = env[property];
 
         // If empty, don't add to arguments string
-        if (oldEnv[property].length > 0) {
-          filteredOpts.push(oldEnv[property]);
+        if (env[property].length > 0) {
+          extraEnvArr.push(env[property]);
         }
       } else {
-        cleanEnv[property] = oldEnv[property];
+        cleanEnv[property] = env[property];
       }
     });
 
-  filteredEnv.env = cleanEnv;
-  filteredEnv.arguments = filteredOpts.join(' ');
-
-  return filteredEnv;
+  return {
+    env: cleanEnv,
+    extraEnv: extraEnv,
+    args: extraEnvArr.join(' ')
+  };
 }
 
 exports.filter = filter;
