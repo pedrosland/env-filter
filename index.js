@@ -18,7 +18,7 @@ function filter(envVars, env) {
 
   // Copy environment but filter variables
   Object.keys(env)
-    .forEach(function (property) {
+    .forEach(function(property) {
       if (envVars.indexOf(property) > -1) {
         // Copy into result object
         extraEnv[property] = env[property];

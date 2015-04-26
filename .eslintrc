@@ -7,3 +7,11 @@ rules:
   quotes:
     - 2
       single
+  valid-jsdoc: 2
+
+  # Style
+  space-after-keywords: 1
+  space-before-blocks: 1
+  space-before-function-paren:
+    - 1
+    - never

@@ -4,7 +4,8 @@
   "description": "Filter environment variables and return them as a string. Useful for running Java applications and reading the output.",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,8 @@
   },
   "homepage": "https://github.com/pedrosland/env-filter",
   "devDependencies": {
-    "eslint": "^0.20.0"
+    "chai": "^2.3.0",
+    "eslint": "^0.20.0",
+    "mocha": "^2.2.4"
   }
 }
