@@ -24,7 +24,7 @@ process.spawn('java -jar some.jar ' + clean.argsString, {
 ### .filter(envVars, oldEnv)
 Clean the specified environment variables. If the environment variables aren't present they are ignored.
 
-__envVars__ `String[]` The array of the environment variable names that you want to filter out.
+__envVars__ `String[]` The array of the environment variable names that you want to filter out.  
 __env__     `Object=`  Environment to filter. Defaults to `process.env`.
 
 ```js
