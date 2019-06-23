@@ -22,8 +22,8 @@
   },
   "homepage": "https://github.com/pedrosland/env-filter",
   "devDependencies": {
-    "chai": "^2.3.0",
-    "eslint": "^0.20.0",
-    "mocha": "^2.2.4"
+    "chai": "^4.2.0",
+    "eslint": "^6.0.0",
+    "mocha": "^6.1.4"
   }
 }
