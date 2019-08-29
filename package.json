@@ -1,6 +1,6 @@
 {
   "name": "env-filter",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Filter environment variables and return them as a string. Useful for running Java applications and reading the output.",
   "main": "index.js",
   "scripts": {
@@ -23,7 +23,7 @@
   "homepage": "https://github.com/pedrosland/env-filter",
   "devDependencies": {
     "chai": "^4.2.0",
-    "eslint": "^6.0.1",
+    "eslint": "^6.2.2",
     "mocha": "^6.2.0"
   }
 }
