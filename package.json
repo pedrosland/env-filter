@@ -23,7 +23,7 @@
   "homepage": "https://github.com/pedrosland/env-filter",
   "devDependencies": {
     "chai": "^4.2.0",
-    "eslint": "^6.2.2",
-    "mocha": "^6.2.0"
+    "eslint": "^7.0.0",
+    "mocha": "^7.1.2"
   }
 }
